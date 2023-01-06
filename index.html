@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Strength Checker</title>
+    <link rel="stylesheet" href="style.css"></link>
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <h1>Password Strength Test</h1>
+    <div id="strength-meter"></div>
+        <!--
+             we are using input as text not as input:password
+             because we want them to see there password as they are
+             themselves putting this password.
+
+             aria-labelledby is done to provide for those people
+             who are using screen readers they can know that this   
+             where we write doing our password
+
+             autofocus is done on this input because since it is the
+             only input on our page , as soon as we open the website
+             the cursor should come on the input 
+        -->
+    <input type="text" name="" class="password-input" id="password-input" aria-labelledby="Password" autofocus value="password">
+    <div id="reasons" class="reasons"></div>
+</body>
+</html>
